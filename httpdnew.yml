@@ -1,0 +1,6 @@
+- name: "This is https pkg deploy"
+      yum: name=httpd state=latest
+      sudo: yes
+    - name: "Startting Httpd service"
+      service: name=httpd state=started
+      sudo: yes
